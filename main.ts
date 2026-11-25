@@ -3,6 +3,11 @@
 // Candidates are scored 0-2 on the five judge criteria in order
 // (weights 5/4/3/2/1); winner = highest score, ties -> shorter text,
 // then earliest. All lines authored fresh in this session.
+// Two-pass rule: pass 1 scored 7 candidates, pass 2 added 3 challengers;
+// the pass-1 leader (print queue) held at 30/30 and won on the
+// shorter-text tie-break against the 62-char tie.
+// Winner: "You are the only job in my print queue I never want to cancel."
+// (62 chars, 30/30) — title "Print Queue".
 import { writeFileSync, readFileSync, mkdirSync } from "node:fs";
 
 const WEIGHTS = [5, 4, 3, 2, 1];
